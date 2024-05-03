@@ -1,5 +1,5 @@
 node_modules
 .env
-_deployer_.zip
+__deployer__.zip
 package-lock.json
 yarn.lock

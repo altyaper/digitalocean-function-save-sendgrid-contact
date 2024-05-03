@@ -1,19 +1,15 @@
-parameters: {}
-environment: {}
 packages:
     - name: contacts
       shared: false
-      environment: {}
+      environment:
+        SENDGRID_API_KEY: "${SENDGRID_API_KEY}"
+        SENDGRID_LIST_ID: "${SENDGRID_LIST_ID}"
       parameters: {}
       annotations: {}
       functions:
-        - name: hello
+        - name: email
           binary: false
           main: ""
           runtime: nodejs:default
           web: true
           webSecure: false
-          parameters: {}
-          environment: {}
-          annotations: {}
-          limits: {}
